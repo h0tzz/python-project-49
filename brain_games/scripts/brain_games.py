@@ -1,8 +1,8 @@
 #!/user/bin/env python3
-from welcome_user import welcome_user
+from brain_games.welcome_user import run
 
 def main():
-    welcome_user()
+    run()
 
 
 if __name__ == '__main__':
