@@ -28,7 +28,7 @@ def play_game(user_name, generate_question, correct_answers_coount=0):
 	ask_question(question)
 
 	user_answer = get_user_answer()
-	is_ans_correct = correct_answer = user_answer
+	is_ans_correct = correct_answer == user_answer
 
 	if not is_ans_correct:
 		print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{correct_answer}". 

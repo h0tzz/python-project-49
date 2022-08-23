@@ -8,16 +8,16 @@ def generate_question():
 	num1 = randint(0,100)
 	num2 = randint(0,100)
 	rand_sym_number = randint(0,2)
-
-	if rand_sym_number == '+':
+	symbol = symbols[rand_sym_number] 
+	if symbol == '+':
 		result = num1 + num2
-	elif rand_sym_number == '-':
+	elif symbol == '-':
 		result = num1 - num2
-	else:
+	elif symbol == '*':
 		result = num1 * num2
 	
-	question = f'{num1} {symbols[rand_sym_number]} {num2}'
-	return [question, result]
+	question = f'{num1} {symbol} {num2}'
+	return [question, str(result)]
 
 
 def brain_calc():
